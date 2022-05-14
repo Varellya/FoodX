@@ -1,0 +1,130 @@
+// main: ../style.less
+
+.explore {
+    display: flex;
+    flex-direction: column;
+
+    padding: 10rem 0;
+
+    text-align: center;
+}
+
+.explore_title {
+    margin: 0 auto 2rem;
+}
+
+.explore_text {
+    margin: 0 24rem 7rem;
+
+    line-height: 1.75;
+    color: @grey;
+}
+
+.explore_inner {
+    display: flex;
+
+    width: 100%;
+}
+
+.explore_item {
+    display: flex;
+    flex-direction: column;
+    
+    width: 33.33%;
+    margin-right: 8rem;
+
+    text-align: left;
+
+    &:last-child {
+        margin-right: 0;
+    }
+}
+
+.explore_cover {
+    position: relative;
+
+    width: 100%;
+    height: 26rem;
+
+    border-radius: 10px;
+
+    overflow: hidden;
+}
+
+.food_img {
+    position: absolute;
+    top: 50%;
+    left: 0;
+    z-index: 1;
+
+    width: 100%;
+    min-height: 100%;
+
+    transform: translateY(-50%);
+}
+
+.food_name {
+    margin: 3rem 0 1rem;
+
+    font-size: 1.8rem;
+}
+
+.food_time {
+    color: @grey;
+}
+
+.food_cost {
+    position: relative;
+
+    display: flex;
+
+    margin: 1.8rem 0 4.6rem;
+
+    font-family: 'Quicksand', sans-serif;
+    font-size: 2.4rem;
+    font-weight: 500;
+    color: @primary;
+
+    &:after {
+        content: "";
+        display: block;
+
+        position: absolute;
+        bottom: -2.6rem;
+        left: 0;
+        z-index: 1;
+
+        width: 100%;
+        height: 1px;
+
+        background-color: rgba(@grey, 15%);
+    }
+}
+
+.actual_cost {
+    margin-right: 1.5rem;
+}
+
+.old_cost {
+    position: relative;
+
+    color: #c4c4c4;
+
+    &:after {
+        content: "";
+        display: block;
+
+        position: absolute;
+        top: 50%;
+        left: -5%;
+        z-index: 1;
+
+        width: 110%;
+        height: 1px;
+
+        background-color: #c4c4c4;
+
+        transform: rotate(-1deg);
+    }
+}
+

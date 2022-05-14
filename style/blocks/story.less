@@ -1,0 +1,59 @@
+// main: ../style.less
+
+.story {
+    position: relative;
+}
+
+.story_cover {
+    position: relative;
+
+    height: 40rem;
+
+    overflow: hidden;
+}
+
+.story_img {
+    position: absolute;
+    top: 50%;
+    left: 0;
+    z-index: 1;
+
+    width: 100%;
+
+    transform: translateY(-50%);
+}
+
+.story_inner {
+    position: absolute;
+    top: 0;
+    left: 0;
+    z-index: 1;
+
+    display: flex;
+
+    height: 100%;
+}
+
+.story_elements {
+    display: flex;
+    flex-direction: column;
+
+    text-align: center;
+
+    margin: auto 0;
+}
+
+.story_title {
+    margin: 0 36rem;
+
+    line-height: 1.25;
+    color: @primary;
+}
+
+.story_text {
+    margin: 2rem 44rem 3rem;
+
+    line-height: 1.75;
+    color: @white;
+}
+
